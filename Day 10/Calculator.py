@@ -1,6 +1,6 @@
 def sum(a, b) -> float:
 
-    if a is not int or b is not int:
+    if a is not float or b is not float:
         print("ERROR")
         return
     
@@ -8,7 +8,7 @@ def sum(a, b) -> float:
 
 def sub(a, b) -> float:
 
-    if a is not int or b is not int:
+    if a is not float or b is not float:
         print("ERROR")
         return
 
@@ -16,7 +16,7 @@ def sub(a, b) -> float:
 
 def div(a, b) -> float:
 
-    if a is not int or b is not int:
+    if a is not float or b is not float:
         print("ERROR")
         return
 
@@ -24,7 +24,7 @@ def div(a, b) -> float:
 
 def mult(a, b) -> float:
 
-    if a is not int or b is not int:
+    if a is not float or b is not float:
         print("ERROR")
         return
 
@@ -60,3 +60,11 @@ def menu():
         return
 
     print(f"Result: {result}")
+
+flag = True
+
+while flag:
+    menu()
+    stop = input("Do you wanna do another operation? y/n: ")
+    if stop.lower() == "y":
+        flag = False
