@@ -1,33 +1,29 @@
 def sum(a, b) -> float:
 
-    if a is not float or b is not float:
+    if not isinstance(a, float) or not isinstance(b, float):
         print("ERROR")
         return
-    
     return a + b
 
 def sub(a, b) -> float:
 
-    if a is not float or b is not float:
+    if not isinstance(a, float) or not isinstance(b, float):
         print("ERROR")
         return
-
     return a - b
 
 def div(a, b) -> float:
 
-    if a is not float or b is not float:
+    if not isinstance(a, float) or not isinstance(b, float):
         print("ERROR")
         return
-
     return a / b
 
 def mult(a, b) -> float:
 
-    if a is not float or b is not float:
+    if not isinstance(a, float) or not isinstance(b, float):
         print("ERROR")
         return
-
     return a * b
 
 
@@ -66,5 +62,5 @@ flag = True
 while flag:
     menu()
     stop = input("Do you wanna do another operation? y/n: ")
-    if stop.lower() == "y":
+    if stop.lower() == "n":
         flag = False
